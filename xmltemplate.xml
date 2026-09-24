@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File name:  xmltemplate.xml
+  Author:     Diana Chepkoech (3535088)
+  Created:    24 September 2026
+  Purpose:    Template showing the structure of a TuneTown album listing.
+
+  Marking criteria addressed:
+  - Correct file name
+  - DTD with Name, Description, Pricing, Search, Reviews (with attribute),
+    Picture and URL elements using modifiers, plus two entities
+  - Same tags and DTD as xmltemplate.xml
+-->
+<!DOCTYPE albums [
+  <!ELEMENT albums (album+)>
+  <!ELEMENT album (Name, Description, Pricing, Search*, Reviews*, Picture+, URL?)>
+  <!ELEMENT Name (#PCDATA)>
+  <!ELEMENT Description (#PCDATA)>
+  <!ELEMENT Pricing (#PCDATA)>
+  <!ELEMENT Search (#PCDATA)>
+  <!ELEMENT Reviews (#PCDATA)>
+  <!ATTLIST Reviews rating CDATA #REQUIRED>
+  <!ELEMENT Picture (#PCDATA)>
+  <!ELEMENT URL (#PCDATA)>
+  <!ENTITY store "TuneTown">
+  <!ENTITY shipping "Free shipping on orders over $50.">
+]>
+<albums>
+  <album>
+    <Name>Sample Album</Name>
+    <Description>A short description of the album goes here. Available at &store;. &shipping;</Description>
+    <Pricing>$19.99</Pricing>
+    <Search>sample</Search>
+    <Search>album</Search>
+    <Reviews rating="4">A short review goes here.</Reviews>
+    <Picture>image/album1.png</Picture>
+    <URL>http://www.example.com/sample</URL>
+  </album>
+</albums>

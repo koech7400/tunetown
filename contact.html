@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+  File name:  contact.html
+  Author:     Diana Chepkoech (3535088)
+  Created:    24 September 2026
+  Purpose:    TuneTown contact form page.
+
+ 
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TuneTown - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <span class="brand">TuneTown</span>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="contactform">
+    <h2>Send Us a Message</h2>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+      <p>
+        <label for="name">Your name:</label><br>
+        <input type="text" id="name" name="name" size="40" required>
+      </p>
+      <p>
+        <label for="email">Your email address:</label><br>
+        <input type="email" id="email" name="email" size="40" required>
+      </p>
+      <p>
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" size="40" required>
+      </p>
+      <p>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" cols="50" required></textarea>
+      </p>
+      <fieldset>
+        <legend>Urgency</legend>
+        <input type="radio" id="low" name="urgency" value="low" required>
+        <label for="low">Low</label>
+        <input type="radio" id="normal" name="urgency" value="normal">
+        <label for="normal">Normal</label>
+        <input type="radio" id="high" name="urgency" value="high">
+        <label for="high">High</label>
+      </fieldset>
+      <p>
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear Form">
+      </p>
+    </form>
+  </div>
+
+  <address>&copy; 2026 TuneTown. All rights reserved.</address>
+</body>
+</html>
