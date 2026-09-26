@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albums [
+  <!ELEMENT albums (album+)>
+  <!ELEMENT album (Name, Artist, Genre, Description, Pricing, Picture)>
+  <!ELEMENT Name (#PCDATA)>
+  <!ELEMENT Artist (#PCDATA)>
+  <!ELEMENT Genre (#PCDATA)>
+  <!ELEMENT Description (#PCDATA)>
+  <!ELEMENT Pricing (#PCDATA)>
+  <!ELEMENT Picture (#PCDATA)>
+  <!ENTITY store "TuneTown">
+  <!ENTITY location "Newcastle">
+]>
+<albums>
+  <album>
+    <Name>Rust &amp; Roses</Name>
+    <Artist>The Harbour Lights</Artist>
+    <Genre>Rock</Genre>
+    <Description>Big-hearted indie rock with a salt-air edge, hand-picked by &store; in &location;.</Description>
+    <Pricing>£18.00</Pricing>
+    <Picture>images/OIP.jpeg</Picture>
+  </album>
+  <album>
+    <Name>Midnight Run</Name>
+    <Artist>Northbound</Artist>
+    <Genre>Rock</Genre>
+    <Description>Driving alternative rock made for the long way home.</Description>
+    <Pricing>£17.00</Pricing>
+    <Picture>images/OIP (1).jpeg</Picture>
+  </album>
+  <album>
+    <Name>Static Bloom</Name>
+    <Artist>Paper Satellites</Artist>
+    <Genre>Rock</Genre>
+    <Description>Jangly guitars and honest indie-rock lyrics that stay with you.</Description>
+    <Pricing>£16.50</Pricing>
+    <Picture>images/OIP (3).jpeg</Picture>
+  </album>
+  <album>
+    <Name>Neon Skyline</Name>
+    <Artist>The Midnight Owls</Artist>
+    <Genre>Pop</Genre>
+    <Description>Shimmering synth-pop, late-night city lights and huge choruses.</Description>
+    <Pricing>£18.00</Pricing>
+    <Picture>images/OIP (2).jpeg</Picture>
+  </album>
+  <album>
+    <Name>Golden Hour Sessions</Name>
+    <Artist>Ada Reyes</Artist>
+    <Genre>Pop</Genre>
+    <Description>Warm acoustic pop for slow mornings and long drives.</Description>
+    <Pricing>£17.50</Pricing>
+    <Picture>images/OIP (4).jpeg</Picture>
+  </album>
+  <album>
+    <Name>Electric Heart</Name>
+    <Artist>Ruby June</Artist>
+    <Genre>Pop</Genre>
+    <Description>A bright, bold feel-good pop record, available from &store; in &location;.</Description>
+    <Pricing>£16.00</Pricing>
+    <Picture>images/OIP.jpeg</Picture>
+  </album>
+</albums>
